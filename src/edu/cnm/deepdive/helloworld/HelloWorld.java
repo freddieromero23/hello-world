@@ -13,8 +13,8 @@ public class HelloWorld {
     String message = String.format("Hello %s!", target);
     emitMessage(message);
     
-    for (int i = 0; i < args.length; i++) {
-      System.out.printf("Arg # %d is %s%n", i, args[i]); 
+    for (String arg : args) {
+      System.out.printf("Argument: %s%n", arg);
       
     }
     
