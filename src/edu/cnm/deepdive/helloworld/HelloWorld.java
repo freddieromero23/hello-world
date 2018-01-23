@@ -9,7 +9,11 @@ package edu.cnm.deepdive.helloworld;
 public class HelloWorld {
 
   public static void main(String[] args) {
-    emitMessage("Hello World!");
+    String target = ((args.length > 0) ? args[0] : "World");
+    String message = String.format("Hello %s!", target);
+    
+    emitMessage(message);
+    
   }
   
   private static void emitMessage(String message) {
